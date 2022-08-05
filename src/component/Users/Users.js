@@ -7,7 +7,7 @@ const Users = () => {
     const [users, setUsers] = useState([]);
     // console.log(users); 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://sleepy-ridge-26771.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [])
@@ -15,7 +15,7 @@ const Users = () => {
     const handleDelete = (id) => {
         const ensure = window.confirm('Are you sure deleted user?');
         if (ensure) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `https://sleepy-ridge-26771.herokuapp.com/users/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

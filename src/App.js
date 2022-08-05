@@ -6,6 +6,7 @@ import Users from './component/Users/Users';
 import AddUser from './component/AddUser/AddUser';
 import UpdateUser from './component/UpdateUser/UpdateUser';
 import Header from './component/Header/Header';
+import Login from './component/Login/Login';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index path='/users' element={<Users></Users>}></Route>
             <Route path='/user/add' element={<AddUser></AddUser>}></Route>
             <Route path='/user/update/:id' element={<UpdateUser></UpdateUser>}></Route>
+            <Route path='/login' element={<Login></Login>}></Route>
           </Routes>
         </div>
       </BrowserRouter>

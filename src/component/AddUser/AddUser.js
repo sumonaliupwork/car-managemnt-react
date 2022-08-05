@@ -11,7 +11,7 @@ const AddUser = () => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const newUser = { name: name, email: email };
-        fetch('http://localhost:5000/users', {
+        fetch('https://sleepy-ridge-26771.herokuapp.com/users', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'
