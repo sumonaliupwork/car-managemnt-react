@@ -1,0 +1,13 @@
+.wrapper {
+    background: ghostwhite;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+button {
+    border: 1px solid gray;
+    margin: 5px;
+    font-size: 18px;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
